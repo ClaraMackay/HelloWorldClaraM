@@ -36,3 +36,10 @@ local textObjectSignature
 
 -- sign my name
 textObjectSignature = display.newText ("By Clara Mackay", display.contentCenterX, display.contentCenterX, nil, 20)
+
+-- Correct sound
+-- setting a variable to an mp3 file
+local correctSound = audio.loadSound("Sounds/bensound-energy.mp3") 
+local correctSoundChannel
+
+correctSoundChannel = audio.play(correctSound)
